@@ -252,6 +252,7 @@ body{
    background-attachment: fixed; 
 }
 .container2{
+    display: grid;
     grid-template-areas: "head1 head1 head1 head1 head1 head1 head1 head1 head1 head1 head1 head1"
                          "nav1 nav1 nav1 nav1 nav1 nav1 nav1 nav1 nav1 nav1 nav1 nav1"
                          "mai mai mai mai mai mai mai mai mai mai mai mai";
@@ -304,7 +305,7 @@ body{
 .main-list{
     grid-area: mai;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
     gap: 10px;
     margin: 1%;
 }
@@ -313,14 +314,17 @@ body{
     border-radius: 5%; 
 }
 .img1 {
+    margin:auto;
     grid-column: 2;
     grid-row: 1 / span 2;
 }
+.center{
+    text-align:center;
+}
 .img1 img {
-    margin-top: 18%;
-    margin-left: 12%;
-    max-width: 75%; 
-    height: auto;
+    margin:auto;
+    width: 75%; 
+    height: 60%;
     border-radius: 50%;
 }
 .hob {
@@ -494,6 +498,7 @@ body{
    background-attachment: fixed; 
 }
 .container3{
+    display: grid;
     grid-template-areas: "head2 head2 head2 head2 head2 head2 head2 head2 head2 head2 head2 head2"
                          "nav2 nav2 nav2 nav2 nav2 nav2 nav2 nav2 nav2 nav2 nav2 nav2"
                          "mai2 mai2 mai2 mai2 mai2 mai2 mai2 mai2 mai2 mai2 mai2 mai2";
@@ -554,10 +559,6 @@ body{
     background-color:rgba(255, 255, 255, 0.705);
 } */
 .list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
     background-color:rgba(255, 255, 255, 0.705);
     border-radius: 1%;
     margin: 1%;
