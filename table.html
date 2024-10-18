@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="table.css">
+  <title>My website</title>
+</head>
+<body>
+    <div class="container5">
+      <div class="header5">
+        <h1>There should be a headline here</h1>
+        <p>A website created by me</p> <!--/*Watch  Learn  Act*/-->
+      </div>
+    <nav class="navbar5">
+        <a href="index.html">Main</a>         
+        <a href="resume.html">Resume</a>
+        <a href="something.html">Something</a>
+        <a href="page.html">Positioning</a>
+        <a href="table.html">Table</a>
+        <a href="#" class="right">MyWebsite</a>
+    </nav>
+    <div class="main5">
+    <caption><b>Таблица произведений</b></caption>
+    <table>
+        <thead>
+            <tr>
+                <th>Название книги</th>
+                <th>Автор</th>
+                <th>Год издания</th>
+                <th>Жанр</th>
+                <th>Издательство</th>
+                <th>Страницы</th>
+                <th>Рейтинг</th>
+            </tr>
+        </thead>
+        <tbody id="bookTableBody">
+            <tr>
+                <td>Война и мир</td>
+                <td>Лев Толстой</td>
+                <td>1869</td>
+                <td>Исторический роман</td>
+                <td>Эксмо</td>
+                <td>1225</td>
+                <td>8.5</td>
+            </tr>
+            <tr>
+                <td>1984</td>
+                <td>Джордж Оруэлл</td>
+                <td>1949</td>
+                <td>Роман-антиутопия</td>
+                <td>АСТ</td>
+                <td>328</td>
+                <td>8.8</td>
+            </tr>
+            <tr>
+                <td>451 градус по Фаренгейту</td>
+                <td>Рэй Брэдбери</td>
+                <td>1953</td>
+                <td>Философский роман</td>
+                <td>Эксмо</td>
+                <td>320</td>
+                <td>8.0</td>
+            </tr>
+            <tr>
+                <td>Мастер и Маргарита</td>
+                <td>Михаил Булгаков</td>
+                <td>1967</td>
+                <td>Роман</td>
+                <td>МИФ</td>
+                <td>512</td>
+                <td>8.5</td>
+            </tr>
+            <tr>
+                <td>Убить пересмешника</td>
+                <td>Харпер Ли</td>
+                <td>1960</td>
+                <td>Роман</td>
+                <td>Аттикус</td>
+                <td>281</td>
+                <td>8.9</td>
+            </tr>
+            <tr>
+                <td>Преступление и наказание</td>
+                <td>Фёдор Достоевский</td>
+                <td>1866</td>
+                <td>Роман</td>
+                <td>Азбука</td>
+                <td>430</td>
+                <td>7.8</td>
+            </tr>
+            <tr>
+                <td>Зеленая миля</td>
+                <td>Стивен Кинг</td>
+                <td>1996</td>
+                <td>Психологическая драма</td>
+                <td>АСТ</td>
+                <td>448</td>
+                <td>9.5</td>
+            </tr>
+            <tr>
+                <td>О дивный новый мир</td>
+                <td>Олдос Хаксли</td>
+                <td>1932</td>
+                <td>Философский роман</td>
+                <td>АСТ</td>
+                <td>352</td>
+                <td>7.5</td>
+            </tr>
+            <tr>
+                <td>Книжный вор</td>
+                <td>Маркус Зусак</td>
+                <td>2005</td>
+                <td>Роман</td>
+                <td>Эксмо</td>
+                <td>512</td>
+                <td>9.2</td>
+            </tr>
+            <tr>
+                <td>Собачье сердце</td>
+                <td>Михаил Булгаков</td>
+                <td>1925</td>
+                <td>Сатирическая повесть</td>
+                <td>Эксмо</td>
+                <td>176</td>
+                <td>8.5</td>
+            </tr>
+        </tbody>
+    </table>
+    <form id="bookForm">
+            <div class="form-book">
+                <label for="title">Название произведения:</label>
+                <input type="text" id="title" name="title" required>
+            </div>
+            <div class="form-book">
+                <label for="fio">ФИО автора:</label>
+                <input type="text" id="fio" name="fio" required>
+            </div>
+            <div class="form-book">
+                <label for="year">Год издания:</label>
+                <input type="number" id="year" name="year" required>
+            </div>
+            <div class="form-book">
+                <label for="genre">Жанр:</label>
+                <input type="text" id="genre" name="genre" required>
+            </div>
+            <div class="form-book">
+                <label for="publishing">Издательство:</label> 
+                <input type="text" id="publishing" name="publishing" required>
+                </select>
+            </div> 
+            <div class="form-book">
+                <label for="pages">Количество страниц:</label>
+                <input type="number" id="pages" name="pages" required>
+            </div>
+            <div class="form-book">
+                <label for="rating">Рейтинг:</label>
+                <input type="" id="rating" name="rating" step="0,1"required>
+            </div>
+            <button type="submit">Добавить</button>
+        </form>
+    </div>
+    </div>
+    <script>
+            document.getElementById('bookForm').addEventListener('submit', function(e) {
+                e.preventDefault();  
+                 
+                const title = document.getElementById('title').value;
+                const fio = document.getElementById('fio').value;
+                const year = document.getElementById('year').value;
+                const genre = document.getElementById('genre').value;
+                const publishing = document.getElementById('publishing').value; 
+                const pages = document.getElementById('pages').value;
+                const rating = document.getElementById('rating').value;
+                const newRow = `
+                <tr>
+                <td>${title}</td>
+                <td>${fio}</td>
+                <td>${year}</td>
+                <td>${genre}</td>
+                <td>${publishing}</td> 
+                <td>${pages}</td>
+                <td>${rating}</td>
+                </tr>`
+                ;
+                
+        document.getElementById('bookTableBody').insertAdjacentHTML('beforeend', newRow);
+        this.reset();
+            });
+    </script>
+</body>
+</html>
