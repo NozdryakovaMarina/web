@@ -1,0 +1,158 @@
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+   background-image: url("img/fon.jpg"); 
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed; 
+}
+.cont4{
+    display: grid;
+    grid-template-areas: "head3 head3 head3 head3 head3 head3 head3 head3 head3 head3 head3 head3"
+                         "nav3 nav3 nav3 nav3 nav3 nav3 nav3 nav3 nav3 nav3 nav3 nav3"
+                         "mai3 mai3 mai3 mai3 mai3 mai3 mai3 mai3 mai3 mai3 mai3 mai3";
+    gap: 0;
+}
+.cont4 > div {
+    padding: 0;
+}
+.header4 {
+    grid-area: head3;
+    padding: 80px;
+    margin: 0;
+    text-align: center;
+    color: white;
+}
+.header4 h1{
+    padding-top: 100px;
+    font-size: 50px;
+    margin: 0 ;
+}
+
+.header4 p{
+    padding-bottom: 100px;
+    padding-top: 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.navbar4{
+    grid-area: nav3;
+    background-color: #000000;
+    padding-left: 26px;
+    overflow: hidden;
+}
+.navbar4 a {
+    font-size: 20px;
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+.navbar4 a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.navbar4 a.right {
+    float: right;
+    font-weight: 600;
+}
+.main4{
+    grid-area: mai3;
+    display: grid;
+    gap: 10px;
+    margin: 1%; 
+    background-color:rgba(255, 255, 255, 0.705);
+    border-radius: 1%;  
+}
+
+.main4 h1{
+    text-align: start;
+    margin-left: 4%;
+    margin-top: 4%;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 0; 
+    color: #820d1f;
+}
+.container {
+    background-color: rgba(231, 104, 7, 0.705);
+    width: 1442px;
+    height: 200px;
+}
+.block{
+    width: 200px; 
+    height: 200px; 
+    background-color: rgb(244, 13, 51); 
+    position: relative;
+    left: 621px; 
+} 
+
+.container-2 {
+    background-color: rgb(231, 104, 7, 0.705); 
+    height: 600px;  
+}
+.block-2{
+    position: relative;
+    top: 200px;
+    left: 621px; 
+    width: 200px; 
+    height: 200px; 
+    background-color: rgb(110, 17, 107);
+}
+.container-3{
+    background-color: lightyellow; 
+    display: flex; 
+    flex-wrap: wrap; 
+    padding: 10px;
+    justify-content: flex-start;
+    border: 2px solid #333;
+}
+.block-3{
+    width: 200px; 
+    height: 200px; 
+    background-color: rgb(193, 165, 219);
+    margin: 10px;
+}
+.position{
+    position: relative; 
+    height: 300px; 
+    background-color: rgb(255, 255, 255);
+}
+.i1 {
+    position: absolute; 
+    top: 20px; 
+    left: 20px; 
+    background-color: rgba(255, 0, 0, 0.727); 
+    width: 100px; 
+    height: 100px;
+}
+.i2{
+    position: absolute; 
+    left: 90px; 
+    top: 90px; 
+    background-color: rgba(0, 255, 64, 0.732); 
+    width: 100px; 
+    height: 100px;
+}
+.i3{
+    position: absolute; 
+    left: 160px; 
+    top: 160px; 
+    background-color: rgba(0, 0, 255, 0.737); 
+    width: 100px; 
+    height: 100px;
+}
+.photo img{
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
+    width: 100px; 
+    height: 100px; 
+    margin: 0;
+}
